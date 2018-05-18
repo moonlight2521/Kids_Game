@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9WF-y9-lHF">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back-main" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-9D-ipd">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcC-f4-cTZ">
+                                <rect key="frame" x="567" y="461" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="7aO-dG-d5N"/>
+                                    <constraint firstAttribute="height" constant="70" id="YBH-ag-Lxb"/>
+                                </constraints>
+                                <state key="normal" title="Hard" backgroundImage="hard">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDifficlty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36g-uE-zM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XK-Zs-ySc">
+                                <rect key="frame" x="687" y="208" width="240" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="roE-hm-532"/>
+                                    <constraint firstAttribute="height" constant="175" id="vjR-nW-Pfh"/>
+                                </constraints>
+                                <color key="tintColor" red="0.45819537061888693" green="1" blue="0.95092192306558831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="balloon-game-logo3"/>
+                                <connections>
+                                    <action selector="selectGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdl-95-i4X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8k-V5-aX7">
+                                <rect key="frame" x="87" y="208" width="250" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="ILk-yh-dgZ"/>
+                                    <constraint firstAttribute="width" constant="250" id="rgo-iE-D2t"/>
+                                </constraints>
+                                <state key="normal" image="memory"/>
+                                <connections>
+                                    <action selector="selectGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkl-Hz-c6E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN4-dN-Dpr">
+                                <rect key="frame" x="387" y="208" width="250" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="9We-9e-yId"/>
+                                    <constraint firstAttribute="width" constant="250" id="Ibx-Up-PE4"/>
+                                </constraints>
+                                <state key="normal" image="sorting-icon"/>
+                                <connections>
+                                    <action selector="selectGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLk-X5-cuG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0G-iK-BoK">
+                                <rect key="frame" x="387" y="461" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="QJM-Ir-Dra"/>
+                                    <constraint firstAttribute="height" constant="70" id="ZNV-Ze-aPA"/>
+                                </constraints>
+                                <state key="normal" title="Easy" backgroundImage="easy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDifficlty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QWW-Pz-RPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dox-Ha-yNd">
+                                <rect key="frame" x="477" y="461" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0O3-jf-lOz"/>
+                                    <constraint firstAttribute="width" constant="70" id="N87-zt-ces"/>
+                                </constraints>
+                                <state key="normal" title="Medium" backgroundImage="medium">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDifficlty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28j-dq-9nz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjc-Zw-nSl">
+                                <rect key="frame" x="387" y="574" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3L7-68-Hyw"/>
+                                    <constraint firstAttribute="height" constant="100" id="8UW-x1-FHA"/>
+                                </constraints>
+                                <state key="normal" image="PlayButton"/>
+                                <connections>
+                                    <action selector="gotoGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pt-r1-eXL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dox-Ha-yNd" secondAttribute="bottom" constant="237" id="0Ft-Gz-zSd"/>
+                            <constraint firstItem="Fjc-Zw-nSl" firstAttribute="top" secondItem="HcC-f4-cTZ" secondAttribute="bottom" constant="43" id="0R4-5i-mzC"/>
+                            <constraint firstItem="Fjc-Zw-nSl" firstAttribute="centerX" secondItem="jLs-9D-ipd" secondAttribute="centerX" id="1BJ-ax-qon"/>
+                            <constraint firstItem="dox-Ha-yNd" firstAttribute="baseline" secondItem="u0G-iK-BoK" secondAttribute="baseline" id="507-S5-I8g"/>
+                            <constraint firstItem="KN4-dN-Dpr" firstAttribute="leading" secondItem="J8k-V5-aX7" secondAttribute="trailing" constant="50" id="9Th-mb-rmo"/>
+                            <constraint firstItem="1XK-Zs-ySc" firstAttribute="centerY" secondItem="KN4-dN-Dpr" secondAttribute="centerY" id="FsG-S0-hyK"/>
+                            <constraint firstItem="u0G-iK-BoK" firstAttribute="leading" secondItem="KN4-dN-Dpr" secondAttribute="leading" id="NHi-3q-pb8"/>
+                            <constraint firstItem="dox-Ha-yNd" firstAttribute="baseline" secondItem="HcC-f4-cTZ" secondAttribute="baseline" id="Qmg-gZ-zBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jLs-9D-ipd" secondAttribute="bottom" id="QuJ-jv-c5n"/>
+                            <constraint firstItem="dox-Ha-yNd" firstAttribute="top" secondItem="KN4-dN-Dpr" secondAttribute="bottom" constant="78" id="T4M-cs-oVs"/>
+                            <constraint firstItem="Fjc-Zw-nSl" firstAttribute="trailing" secondItem="HcC-f4-cTZ" secondAttribute="trailing" id="YMq-iv-Qh1"/>
+                            <constraint firstItem="1XK-Zs-ySc" firstAttribute="centerY" secondItem="J8k-V5-aX7" secondAttribute="centerY" id="clS-5n-fLy"/>
+                            <constraint firstItem="jLs-9D-ipd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d6W-7w-QuA"/>
+                            <constraint firstItem="Fjc-Zw-nSl" firstAttribute="leading" secondItem="u0G-iK-BoK" secondAttribute="leading" id="dOY-OM-Qtc"/>
+                            <constraint firstItem="dox-Ha-yNd" firstAttribute="centerX" secondItem="jLs-9D-ipd" secondAttribute="centerX" id="qhm-ow-Vt7"/>
+                            <constraint firstItem="1XK-Zs-ySc" firstAttribute="leading" secondItem="KN4-dN-Dpr" secondAttribute="trailing" constant="50" id="sPI-1s-TBQ"/>
+                            <constraint firstItem="jLs-9D-ipd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wD9-iy-zSA"/>
+                            <constraint firstItem="KN4-dN-Dpr" firstAttribute="centerX" secondItem="jLs-9D-ipd" secondAttribute="centerX" id="xjs-d2-uCb"/>
+                            <constraint firstItem="HcC-f4-cTZ" firstAttribute="trailing" secondItem="KN4-dN-Dpr" secondAttribute="trailing" id="xtQ-7A-3Rr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jLs-9D-ipd" secondAttribute="trailing" id="zWB-5b-jhb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vv3-0H-Dj2">
+                        <barButtonItem key="rightBarButtonItem" title="High Score" id="kYQ-V7-ftj">
+                            <connections>
+                                <action selector="highScore:" destination="BYZ-38-t0r" id="uOv-sw-hXU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backGroundView" destination="jLs-9D-ipd" id="nnE-cu-PeO"/>
+                        <outlet property="balloonButton" destination="1XK-Zs-ySc" id="qOa-Ll-NkV"/>
+                        <outlet property="easyButton" destination="u0G-iK-BoK" id="P1f-nd-NXL"/>
+                        <outlet property="hardButton" destination="HcC-f4-cTZ" id="7wX-IT-UcX"/>
+                        <outlet property="mediumButton" destination="dox-Ha-yNd" id="NM9-Tz-XO6"/>
+                        <outlet property="memoryButton" destination="J8k-V5-aX7" id="ORR-Ha-wqd"/>
+                        <outlet property="playButton" destination="Fjc-Zw-nSl" id="raa-u1-CT8"/>
+                        <outlet property="sortingButton" destination="KN4-dN-Dpr" id="5Fp-rz-eh1"/>
+                        <segue destination="6f0-Sb-cyW" kind="show" identifier="gotoMemoryGame" id="joe-uz-315"/>
+                        <segue destination="9sS-Np-9Gd" kind="show" identifier="gotoSortingGame" id="B8l-AW-PnH"/>
+                        <segue destination="G0G-a7-b8n" kind="show" identifier="gotoBalloonGame" id="Ads-BM-JCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.82031249999997" y="255.46875"/>
+        </scene>
+        <!--MemoryVC-->
+        <scene sceneID="onH-r4-Ifg">
+            <objects>
+                <viewController id="6f0-Sb-cyW" customClass="MemoryVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lTu-kH-fTX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eD6-Vo-eiX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlT-5f-ERY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.89062499999989" y="-415.625"/>
+        </scene>
+        <!--SortingVC-->
+        <scene sceneID="Vsx-CH-aTH">
+            <objects>
+                <viewController id="9sS-Np-9Gd" customClass="SortingVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HpI-wB-VXK">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z0v-Yg-1ux"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oM-0T-UGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="257"/>
+        </scene>
+        <!--BalloonVC-->
+        <scene sceneID="8Iu-si-7HF">
+            <objects>
+                <viewController id="G0G-a7-b8n" customClass="BalloonVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LHe-LI-tJH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6fY-LC-xWO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfz-Dd-pLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="908"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oek-CZ-Tab">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9WF-y9-lHF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXH-39-bhs">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9i6-RW-bV7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1h7-ET-RIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="255"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlayButton" width="224" height="100"/>
+        <image name="back-main" width="1024" height="600"/>
+        <image name="balloon-game-logo3" width="300" height="300"/>
+        <image name="easy" width="516" height="516"/>
+        <image name="hard" width="250" height="250"/>
+        <image name="medium" width="300" height="300"/>
+        <image name="memory" width="512" height="512"/>
+        <image name="sorting-icon" width="400" height="300"/>
+    </resources>
+</document>
